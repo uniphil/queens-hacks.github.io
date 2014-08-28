@@ -17,11 +17,16 @@
 
       content: '_';
     }
+    .prompt {
+      display: block;
+      margin: 0px auto;
+      padding: 10px;
+      max-width: 600px;
+    }
   </style>
 </head>
 
 <body>
-  <center>
   <main class="prompt">
     <p>Queen&apos;s Hack Nights: Every Tueday @ 6:30 pm.</p>
     <p>Make something, geek out, eat pizza.</p>
@@ -49,7 +54,7 @@
         var charIdx = 0;
 
         var typeChar = function() {
-          var rand = Math.round(Math.random() * 150) + 25;
+          var rand = Math.round(Math.random() * 100) + 25;
 
           setTimeout(function() {
             var char = content[charIdx++];
